@@ -1,0 +1,35 @@
+Code:
+class Person{
+    constructor(name)
+    {
+        this.name=name
+    }
+    greetings()
+    {
+       return `Welcome to method Greetings I am ${this.name}`
+    }
+    getFood()
+    {
+       return `I am ${this.name}.I would like to eat Pizza`
+    }
+    static displayWalk()
+    {
+        return 'I am static method with name displayWalk'
+    }
+}
+
+let person1=new Person('Amruta')
+let food=new Person('Omkar')
+console.log(person1.greetings())
+console.log(food.getFood())
+console.log(Person.displayWalk())
+
+
+Output:
+Welcome to method Greetings I am Amruta
+I am Omkar.I would like to eat Pizza
+I am static method with name displayWalk
+Execution Time:
+0.064s
+Memory Used:
+8108kb
