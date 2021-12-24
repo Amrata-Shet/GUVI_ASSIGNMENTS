@@ -1,0 +1,47 @@
+Question 2)Write a blog on Difference between HTTP1.1 vs HTTP2
+Answer-
+	Property			HTTP1.1								HTTP2
+1->Web traffic			Risk of network congestion						Lesser Network delays
+
+2->Performance optimization	Optimizations used are sprinting,inlining,domain shrading 		This protocol version removes the need for unnecessary optimization hacks.
+				and concatenating.
+
+3->Status code			It brings a warning header field to carry additional information        It brings the fundamental semantics of HTTP like headers,status code remains same.
+				about the status of a message. It can define 24 status codes.		
+
+4->Authentication mechanism	It uses digest authentication and NTLM authentication.			Its better equipped to deal with security threats, with TLS feature like 
+													connection error of type inadequate security.
+
+5->Security			SSL/TLS for secure encrypted communication				It also has minimum standards and minimum key size for encryption.
+
+
+
+Question 3)Write a blog about objects and its internal representation in Javascript
+Answer-
+
+In Javascript, objects may be defined as an unordered collection of related data,in the form of “key: value” pairs.JavaScript object is basically a map from strings to values.
+
+Ways to create an object in javascript are as follows-
+1)Object literal-
+object literal is a comma-separated list of name-value pairs wrapped in curly braces. 
+
+var car={id:1 , name:’abc’ , display:function() }
+As evident from the above example property values can be of any data type, including array literals, functions, nested object literals, or primitive data type.
+
+2)Object constructor-
+Object is being created using the constructor class,with the help of 'new' keyword.
+
+function Person(name, age, eye) {
+this.Name = name;
+this.age = age;
+this.eyeColor = eye;
+}
+
+creating objects using constructor-
+var p1= new Person(“John”, 50, “blue”);
+var p2= new Person(“Sally”, 48, “green”);
+
+
+An object is essentially a collection of properties: basically key-value pairs. We can access properties using two different kinds of expressions:
+obj.prop
+obj[“prop”]
