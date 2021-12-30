@@ -53,7 +53,7 @@ class movie{
         	this.studio=studio;
         	this.rating=rating;
     	}
-   getPG([])
+  static getPG(mov)
 	{   
 	    var res=[]
 	for(let index in mov)
@@ -64,12 +64,31 @@ class movie{
 	    }
 	    else
 	    continue;
-	}
+	}return res
 	}
 }
-var movie1=new movie("kgf","studio");
-var movie2=new movie('svp2','A1studio','r')
-console.log(movie1.getPG(),movie2.getPG())
+
+var mov=[
+    {
+     title:'Jacky',
+     studio:'PRK',
+     rating:'PG'
+    },
+    {
+      title:'HNY',
+     studio:'YR',
+     rating:'B'
+    },
+    {
+     title:'KGF',
+     studio:'Hombale',
+     rating:'A'
+    }]
+
+console.log(movie.getPG(mov))
+
+Output->
+[ 'Jacky' ]
 
 
 
