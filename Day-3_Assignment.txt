@@ -162,7 +162,7 @@ var obj={
 "area":  "Mangalore", "year": "2012-2014", "score": "90" }], "10th standard": [{  "school": "St.Anthony's High School", "url": "https://donbosco.com/", "area":  "Sirsi", "year": "2009-2012"
 , "score": "90" }], "final year project": [{ "name":  "Diagnosis of liver diseases using ML algorithms", "technology": "Machine Learning", "keywords": [  "ML","Analysis","Python" ] }], 
 "languages known": [ "English","Kannada","Hindi","Konkani"], "interests": [{ "name": "travelling", "keywords": [ "Trekking","scenic beauty" ] }], "declaration": [{  "declaration": "Amrata,here by declare
- that the above info is true to the best of my  knowledge " }], }}
+ that the above info is true to the best of my  knowledge " }] }}
 
 
 
