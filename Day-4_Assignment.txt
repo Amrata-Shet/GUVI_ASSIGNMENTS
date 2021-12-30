@@ -43,7 +43,7 @@ script.js->
 
 var xhr = new XMLHttpRequest();
 xhr.onload = function() {
-if(xhr.status>= 0 && xhr.status <= 300){
+if(xhr.status>= 200 && xhr.status <= 300){
 var t = JSON.parse(this.response);
 t.forEach(element => {
  for(let key in t){
@@ -1066,9 +1066,26 @@ node.js:13 https://restcountries.eu/data/zwe.svg
 Question 3)Use the same rest countries and print all countries name, region, sub region and population
 Answer/Code:
 
+index.html->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+script.js->
+
 var xhr = new XMLHttpRequest();
 xhr.onload = function(){
-if(xhr.status>= 0 && xhr.status < 300){
+if(xhr.status>= 200 && xhr.status < 300){
 var t = JSON.parse(this.response);
 t.forEach(element =>{
  for(let key in t){
@@ -1084,7 +1101,7 @@ else
 console.log(xhr.responseText);
 }
 };
-xhr.open("GET","https://restcountries.eu/rest/v2/all");
+xhr.open("GET","https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json");
 xhr.send();
 
 
