@@ -81,86 +81,77 @@ lucknow
 Question 2)Create your own resume data in JSON format
 Answer/Code:
 
------------------------------------------------------------------------------------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-{ 
- "basics": { 
- "name": "AMRATA SHET", 
- "email": "amruta.shet@gmail.com", 
- "phone": "9036086374", 
- "date of birth": "24-10-1995", 
- "nationality": "INDIAN", 
- "url": "https://github.com/Amrata-Shet/GUVI_ASSIGNMENTS",
- "summary": "Passionate career", 
- "location": { 
- "address": "SHREE MAATHA", 
- "postalCode": "581401"
- "city": "Sirsi", 
- "countryCode": "IND", 
-  
-  
- }, 
- "objective": "Passionate Career", 
- "carrer objective": { 
- "Objective": "to be part of organizaton where i could enchance myskills for development of organization and myself " 
- },  
- "education": [{ 
- "institution": "Global Academy of Technology",
- "url": "https://gat.com", 
- "area": "karnataka", 
- "studyType": "Bachelors", 
- "startDate": "2014-06-26", 
- "endDate": "2018-06-15", 
- "score": "80"
- "courses": [ 
- "Bachelor of engineering - B.E" 
- ] 
- }], 
- "12th standard": [{ 
- "college": "Alvas PU College",
- "url": "https://alvas.com/", 
- "area": "Mangalore"
- "year": "2012-2014", 
- "score": "90"
- }], 
- "10th standard": [{ 
- "school": "St.Anthony's High School", 
- "url": "https://donbosco.com", 
- "area": "Sirsi"
- "year": "2009-2012", 
- "score": "90"
- }], 
- "final year project": [{ 
- "name": "Diagnosis of liver diseases using ML algorithms",  "technology": "Machine Learning", 
- "keywords": [ 
- "ML", 
- "Analysis", 
- "Python" 
- ] 
- }], 
- "languages known": [{ 
- "language": "English", 
- "fluency": "Native speaker" 
- "language": "Konkani",
- "fluency": "Native speaker" 
- "language": "Hindi", 
- "fluency": "Native speaker" 
- "language": "Kannada", 
- "fluency": "Native speaker" 
- }], 
- "interests": [{ 
- "name": "travelling", 
- "keywords": [ 
- "Trekking", 
- "scenic beauty" 
- ] 
- }],
- "declaration": [{ 
- "declaration": "Amrata,here by declare that the above info is true to the best of my  knowledge ", 
- }], 
-  
-} 
-
-Output: 
+var obj={ 
+    "basics": { 
+    "name": "AMRATA SHET", 
+    "email": "amruta.shet@gmail.com", 
+    "phone": "9036086374", 
+    "date of birth": "24-10-1995", 
+    "nationality": "INDIAN", 
+    "url": "https://github.com/Amrata-Shet/GUVI_ASSIGNMENTS",
+    "summary": "Passionate career", 
+    "location": { 
+    "address": "SHREE MAATHA", 
+    "postalCode": "581401",
+    "city": "Sirsi", 
+    "countryCode": "IND",
+    },
+   "objective": "Passionate Career", 
+   "carrer objective": { 
+   "Objective": "to be part of organizaton where i could enchance myskills for development of organization and myself " 
+   },  
+   "education": [{ 
+   "institution": "Global Academy of Technology",
+   "url": "https://gat.com", 
+   "area": "karnataka", 
+   "studyType": "Bachelors", 
+   "startDate": "2014-06-26", 
+   "endDate": "2018-06-15", 
+   "score": "80",
+   "courses": [ 
+   "Bachelor of engineering - B.E" 
+    ] 
+    }], 
+    "12th standard": [{ 
+    "college": "Alvas PU College",
+    "url": "https://alvas.com/", 
+    "area": "Mangalore",
+    "year": "2012-2014", 
+    "score": "90"
+    }],
+    "10th standard": [{ 
+    "school": "St.Anthony's High School", 
+    "url": "https://donbosco.com", 
+    "area": "Sirsi",
+    "year": "2009-2012", 
+    "score": "90"
+    }], 
+   "final year project": [{ 
+    "Project_name": "Diagnosis of liver diseases using ML algorithms",  "technology": "Machine Learning", 
+    "keywords": [ 
+    "ML", 
+    "Analysis", 
+    "Python"
+    ]
+    }],
+    "languages known": [
+    "English","Kannada","Hindi","Konkani"
+    ], 
+    "interests": [{ 
+    "name": "travelling", 
+    "keywords": [ 
+    "Trekking", 
+    "scenic beauty" 
+    ] 
+    }],
+    "declaration": [{ 
+    "declaration": "Amrata,here by declare that the above info is true to the best of my  knowledge ", 
+    }], 
+   
+   
+   }}
+   console.log(obj)
+   Output: 
 { "basics": { "name": "AMRATA SHET", "email": "amruta.shet@gmail.com",  "phone": "9036086374", "date of birth": "24-10-1995", "nationality": "INDIAN",  "url": "https://github.com/Amrata-Shet/GUVI_ASSIGNMENTS",
 "summary": "Passionate career",  "location": { "address": "SHREE MAATHA", "postalCode":  "581401", "city": "Sirsi", "countryCode": "IND", },
 "objective": "Passionate Career", "carrer objective": { "Objective": "to be part of  organization where i could enchance myskills for development of organization  and myself "}
