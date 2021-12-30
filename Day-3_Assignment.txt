@@ -3,7 +3,7 @@ Answer/Code:
 
 a)FOR->
 
-var obj = [ { fname:"sai", age: "2", city: "HYD" }, { fname: "sarya", age: "5", city: "Goa" }, { fname: "raj kiran", age: "87", city: "lucknow" }, ]; 
+var obj = [ { fname:"Amrata", age: "26", city: "Sirsi" }, { fname: "Aksh", age: "28", city: "Goa" }, { fname: "raj kiran", age: "87", city: "lucknow" }, ]; 
 for(i=0;i<obj.length;i++){
     console.log(obj[i].fname)
     console.log(obj[i].age)
@@ -11,11 +11,11 @@ for(i=0;i<obj.length;i++){
 }
 
 Output:
-sai
-2
-HYD
-sarya
-5
+Amrata
+26
+Sirsi
+Aksh
+28
 Goa
 raj kiran
 87
@@ -29,11 +29,11 @@ for(var param in obj[i]){
 }
 
 Output:
-fname: sai
-age: 2
-city: HYD
-fname: sarya
-age: 5
+fname: Amrata
+age: 26
+city: Sirsi
+fname: Aksh
+age: 28
 city: Goa
 fname: raj kiran
 age: 87
@@ -48,11 +48,11 @@ for(var elements of obj){
 }
 
 Output:
-sai
-2
-HYD
-sarya
-5
+Amrata
+26
+Sirsi
+Aksh
+28
 Goa
 raj kiran
 87
@@ -66,11 +66,11 @@ obj.forEach(function(objects){
 })
 
 Output:
-sai
-2
-HYD
-sarya
-5
+Amrata
+26
+Sirsi
+Aksh
+28
 Goa
 raj kiran
 87
