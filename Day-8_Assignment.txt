@@ -53,16 +53,18 @@ class movie{
         	this.studio=studio;
         	this.rating=rating;
     	}
-   getPG()
+   getPG([])
+	{   
+	    var res=[]
+	for(let index in mov)
 	{
-		if(this.rating=='PG')
-		{
-			return this.movie
-		}
-		else
-		{
-			return ''
-		}
+	    if(mov[index].rating == 'PG')
+	    {
+	      res.push(mov[index].title)  
+	    }
+	    else
+	    continue;
+	}
 	}
 }
 var movie1=new movie("kgf","studio");
