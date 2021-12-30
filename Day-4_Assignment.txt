@@ -16,7 +16,7 @@ const obj2= {
 JSON.stringify(obj1) === JSON.stringify(obj2)
 // false
     
-_.isEqual(object1, object2)
+_.isEqual(obj1, obj2)
 //true
 
 
