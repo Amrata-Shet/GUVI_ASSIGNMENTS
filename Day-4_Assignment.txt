@@ -24,13 +24,30 @@ _.isEqual(object1, object2)
 Question 2)Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console
 Answer/Code:
 
+index.html->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+script.js->
+
 var xhr = new XMLHttpRequest();
 xhr.onload = function() {
-if(xhr.status>= 0 && xhr.status < 300){
+if(xhr.status>= 0 && xhr.status <= 300){
 var t = JSON.parse(this.response);
-t.forEach(element =>{
+t.forEach(element => {
  for(let key in t){
- console.log(t[key].fag)
+ console.log(t[key].flag)
  }
 });
 }
@@ -39,9 +56,8 @@ else
 console.log(xhr.responseText);
 }
 };
-xhr.open("GET","https://restcountries.eu/rest/v2/all");
+xhr.open("GET","https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json");
 xhr.send();
-// displays fags of all countries in console
 
 
 Output:
