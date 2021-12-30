@@ -3,6 +3,7 @@ Question 1)How to compare two JSON have the same properties without order?
 	b)var obj2 = { age:5, name: "Person 1" };
 Answer/Code:
 
+const _= require('lodash')
 const obj1= {
   name: 'Person 1',
   age:5
@@ -13,11 +14,10 @@ const obj2= {
   name: 'Person 1'
 };
     
-JSON.stringify(obj1) === JSON.stringify(obj2)
-// false
+console.log(JSON.stringify(obj1) === JSON.stringify(obj2))  //false
     
-_.isEqual(obj1, obj2)
-//true
+console.log(_.isEqual(obj1, obj2))	//true
+
 
 
 
