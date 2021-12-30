@@ -176,22 +176,15 @@ Output:
 Question 3)Read about the difference between window, screen and document in javascript.
 Answer->
 
-Window is the main JavaScript object root, aka the global object in a browser, and it can also be treated as the root of the document object model. You can access it as window.
+->Window is the main JavaScript object root, the global object in a browser, and it can also be treated as the root of the document object model. You can access it as window.
+  window.screen or just screen is a small information object about physical screen dimensions.
+  window.document or just document is the main object of the potentially visible (or better yet: rendered) document object model/DOM.
 
-window.screen or just screen is a small information object about physical screen dimensions.
+->window is the execution context and global object for that context's JavaScript
+  document contains the DOM, initialized by parsing HTML
+  screen describes the physical display's full screen
 
-window.document or just document is the main object of the potentially visible (or better yet: rendered) document object model/DOM.
-
-window is the execution context and global object for that context's JavaScript
-document contains the DOM, initialized by parsing HTML
-screen describes the physical display's full screen
-
-Each browser tab has its own top-level window object.
-Each window object has a document object to be rendered.
-
-The window object also has a screen object with properties describing the physical display:
-
-screen properties width and height are the full screen
-
-screen properties availWidth and availHeight omit the toolbar
+->Each browser tab has its own top-level window object.
+  Each window object has a document object to be rendered.
+  The window object also has a screen object with properties describing the physical display
 
