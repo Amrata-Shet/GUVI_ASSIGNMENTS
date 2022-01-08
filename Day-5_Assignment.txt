@@ -32,7 +32,7 @@ b. Convert all the strings to title caps in a string array.
 
 var array=["satya","sasi","Raju"];
 (function(){
-    for(i=-0;i<array.length;i++){
+    for(i=0;i<array.length;i++){
         var y=array[i].split("")
         if(y[0].charCodeAt()>=97&&y[0].charCodeAt()<=122){
             y[0]=String.fromCharCode(y[0].charCodeAt(0)-32)
