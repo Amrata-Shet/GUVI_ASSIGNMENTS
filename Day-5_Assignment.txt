@@ -104,6 +104,7 @@ Execution Time:
 Memory Used:
 8160kb
 
+
 e. Return all the palindromes in an array.
 
 var arr=[121,"bob","saias","45154","codekata",1324];
@@ -360,6 +361,37 @@ Execution Time:
 0.066s
 Memory Used:
 8152kb
+
+
+e. Return all the palindromes in an array.
+
+var array1=[121,"bob","saias","45154","codekata",1324];
+var res=[];
+var output=function(arr){
+for(var x of arr){
+    var repeat=0;
+    var y=x.toString();
+    for(i=0;i<=y.length/2;i++){
+        if(y.charAt(i)==y.charAt(y.length-1)){
+             repeat=1;
+        }
+    }
+    if(repeat==1){
+        res.push(x)
+    }
+}
+return res
+}
+console.log(output(array1))
+
+
+Output:
+[ 121, 'bob', 'saias', '45154' ]
+Execution Time:
+0.065s
+Memory Used:
+8112kb
+
 
 
 
