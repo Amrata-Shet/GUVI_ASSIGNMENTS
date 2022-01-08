@@ -131,7 +131,7 @@ class circle{
         console.log("method overriding")
     }
     circle(radius,color){
-        console.log(this.radius,this.color+'final method overriding which accepts by javascripot')
+        console.log(this.radius,this.color+'final method overriding which accepts by javascript')
     }
     getradius(){
         console.log(" radius of the circle is "+this.radius)
