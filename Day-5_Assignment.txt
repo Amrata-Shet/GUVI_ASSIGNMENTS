@@ -1,6 +1,8 @@
 Question 1)Do the below programs in anonymous function & IIFE
 Answer/Code:
 
+IIFE->
+
 a. Print odd numbers in an array
 
 var arr=[245,29,33,52,9];
@@ -246,6 +248,40 @@ Execution Time:
 0.066s
 Memory Used:
 8140kb
+
+
+Anonymous->
+
+a. Print odd numbers in an array
+
+var array1=[245,29,33,52,9];
+
+var odd=[];
+
+
+let res=function(arr){
+for (var x of arr){
+if(x%2==1){
+    odd.push(x);
+}
+else{
+    continue;
+}
+}
+console.log(odd.join(" "));
+}
+
+res(array1)
+
+
+Output:
+245 29 33 9
+Execution Time:
+0.064s
+Memory Used:
+8108kb
+
+
 
 
 Question 3)Do the below programs in arrow functions.
