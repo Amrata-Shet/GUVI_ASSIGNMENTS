@@ -456,6 +456,35 @@ Memory Used:
 8168kb
 
 
+h. Rotate an array by k times.
+
+var arr=[1,2,3,4,6];
+
+var k=2;
+let output=function(){    
+    var res=[];
+    var n=arr.length;
+    k=k%n;
+    for(i=0;i<arr.length;i++){
+        if(i<k){
+        res[i]=arr[n-k+i]
+        }
+        else{
+            res[i]=arr[i-k]
+        }
+    }
+    console.log(res)
+}
+output(arr,k)
+
+
+Output:
+[ 4, 6, 1, 2, 3 ]
+Execution Time:
+0.067s
+Memory Used:
+8164kb
+
 
 Question 3)Do the below programs in arrow functions.
 Answer/Code:
