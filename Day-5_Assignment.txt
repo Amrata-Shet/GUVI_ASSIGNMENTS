@@ -519,11 +519,10 @@ b. Convert all the strings to title caps in a string array.
 
 var array=["amruta","apple","aksh","choco"];
 var res=((array)=>{
-    for(i=-0;i<array.length;i++){
+    for(i=0;i<array.length;i++){
         var y=array[i].split("")
         if(y[0].charCodeAt()>=97&&y[0].charCodeAt()<=122){
-            y[0]=String.fromCharCode(y[0].charCodeAt(0)-32)
-            
+            y[0]=String.fromCharCode(y[0].charCodeAt(0)-32)          
             }
             array[i]=y[0]+array[i].substring(1,y.length)
     }
