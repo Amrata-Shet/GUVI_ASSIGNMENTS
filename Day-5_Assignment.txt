@@ -111,7 +111,7 @@ for(var x of arr){
     var repeat=0;
     var y=x.toString();
     for(i=0;i<=y.length/2;i++){
-        if(y.charAt(i)==y.charAt(y.length-i-1)){
+        if(y.charAt(i)==y.charAt(y.length-1)){
              repeat=1;
 
 
