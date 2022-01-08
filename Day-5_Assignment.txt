@@ -9,7 +9,6 @@ var arr=[245,29,33,52,9];
 
 var odd=[];
 
-
 (function(){
 for (var x of arr){
 if(x%2==1){
@@ -37,8 +36,7 @@ var array=["satya","sasi","Raju"];
     for(i=0;i<array.length;i++){
         var y=array[i].split("")
         if(y[0].charCodeAt()>=97&&y[0].charCodeAt()<=122){
-            y[0]=String.fromCharCode(y[0].charCodeAt(0)-32)
-            
+            y[0]=String.fromCharCode(y[0].charCodeAt(0)-32)          
             }
             array[i]=y[0]+array[i].substring(1,y.length)
     }
@@ -78,13 +76,10 @@ var res=[];
 var output=(function(){
     for(var x of arr){
     var repeat=0;
-        for(var i=2;i<=x/2;i++){
-            
+        for(var i=2;i<=x/2;i++){         
         if(x%i==0){
             repeat=1;
             break;
-
-
         }
         }
         if(repeat==0){
@@ -92,8 +87,6 @@ var output=(function(){
         }
     }
     return  res
-
-
 }(arr))
 console.log(output);
 
@@ -135,8 +128,8 @@ Memory Used:
 
 f. Return median of two sorted arrays of same size.
 
-var ar1 = [1, 12, 5, 26, 38];
-var ar2 = [2, 1, 17, 30, 45];
+var ar1 = [1, 12, 15, 26, 38];
+var ar2 = [2, 13, 17, 30, 45];
 var n1 = ar1.length;
 var n2 = ar2.length;
 var n=n1;
@@ -177,7 +170,7 @@ var n=n1;
 })(ar1,ar2,n1)
 
 Output:
-11
+16
 Execution Time:
 0.065s
 Memory Used:
