@@ -116,16 +116,11 @@ for(var x of arr){
     for(i=0;i<=y.length/2;i++){
         if(y.charAt(i)==y.charAt(y.length-1)){
              repeat=1;
-
-
         }
-
-
     }
     if(repeat==1){
         res.push(x)
-    }
-    
+    }   
 }
 return res
 })(arr)
@@ -178,8 +173,6 @@ var n=n1;
             j++;
         }
     }
-
-
     console.log((m1 + m2)/2)
 })(ar1,ar2,n1)
 
@@ -206,8 +199,6 @@ for(i=0;i<arr.length;i++){
     if(repeat==0){
         res.push(arr[i])
     }
-
-
 }
 console.log(res)
 })(arr)
@@ -225,8 +216,7 @@ h. Rotate an array by k times.
 var arr=[1,2,3,4,6];
 
 var k=2;
-(function(){
-    
+(function(){    
     var res=[];
     var n=arr.length;
     k=k%n;
@@ -239,8 +229,6 @@ var k=2;
         }
     }
     console.log(res)
-
-
 })(arr,k)
 
 Output:
@@ -341,8 +329,6 @@ let output=function(arr){
         if(x%i==0){
             repeat=1;
             break;
-
-
         }
         }
         if(repeat==0){
@@ -350,7 +336,6 @@ let output=function(arr){
         }
     }
     return  res
-
 }
 console.log(output(array1))
 
