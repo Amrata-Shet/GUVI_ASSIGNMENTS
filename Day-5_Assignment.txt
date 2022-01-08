@@ -328,6 +328,41 @@ Memory Used:
 8112kb
 
 
+d. Return all the prime numbers in an array.
+
+var array1=[37,9,78,4,11,3,5];
+var res=[];
+let output=function(arr){
+    for(var x of arr){
+    var repeat=0;
+        for(var i=2;i<=x/2;i++){
+            
+        if(x%i==0){
+            repeat=1;
+            break;
+
+
+        }
+        }
+        if(repeat==0){
+            res.push(x)
+        }
+    }
+    return  res
+
+}
+console.log(output(array1))
+
+
+Output:
+[ 37, 11, 3, 5 ]
+Execution Time:
+0.066s
+Memory Used:
+8152kb
+
+
+
 Question 3)Do the below programs in arrow functions.
 Answer/Code:
 
